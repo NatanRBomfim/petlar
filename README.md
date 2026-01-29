@@ -13,9 +13,9 @@ O projeto simula um site institucional onde usuários podem conhecer a iniciativ
 
 ![Preview do projeto](./assets/imagens/screenshot/dsk-pet-lar-home.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-pet-lar-adocao.png)
+![Preview do projeto](./assets/imagens/screenshot/desk-pet-lar-adocao.png)
 
-![Preview do projeto](./assets/imagens/screenshot/dsk-pet-lar-faq.png)
+![Preview do projeto](./assets/imagens/screenshot/pet-lar-faq.png)
 
 ### 📱 Mobile
 
