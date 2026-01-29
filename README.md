@@ -10,10 +10,10 @@
 
 # en-US
 
-A web platform focused on animal adoption, designed to deliver a simple, accessible, and responsive user experience.
+A web platform focused on **animal adoption**, designed to deliver a simple, accessible, and responsive user experience.
 The project simulates an institutional website where users can learn about the initiative, view animals available for adoption, and get in touch.
 
-🔗 Live Demo: https://pet-lar.netlify.app
+🔗 Live Demo: https://natanrbomfim.github.io/petlar/
 
 ## ✨ Preview
 
@@ -54,8 +54,8 @@ The project simulates an institutional website where users can learn about the i
 
 - The project was developed with accessibility in mind:
 - Proper use of semantic HTML tags
-- aria-* attributes for assistive navigation
-- Focus states (:focus-visible)
+- `aria-*` attributes for assistive navigation
+- Focus states (`:focus-visible`)
 - Fully functional keyboard navigation
 
 ---
@@ -131,7 +131,7 @@ Developed by Natan Bomfim
 Plataforma web voltada para **adoção de animais**, com foco em uma experiência simples, acessível e responsiva.  
 O projeto simula um site institucional onde usuários podem conhecer a iniciativa, visualizar animais disponíveis e entrar em contato.
 
-🔗 **Deploy:** https://pet-lar.netlify.app 
+🔗 **Deploy:** https://natanrbomfim.github.io/petlar/
 
 ---
 
