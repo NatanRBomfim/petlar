@@ -1,6 +1,16 @@
 :root {
     --primary-color: #387bda;
     --border-radius: 5px;
+    --secondary-color: #f0f8ff;
+    --color: white;
+    --color-black: black;
+    --color-footer: gray;
+    --background-copy: gainsboro;
+
+    --gap: 1em;
+    --padding: 3em;
+
+    --width-img: 15em;
 }
 
 html {
@@ -15,11 +25,10 @@ body {
 }
 
 .centralize {
-    background-color: #0c59c5;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .contentLogin {
@@ -28,17 +37,15 @@ body {
 }
 
 .contentLogin>* {
-    min-width: 15.75em;
-    min-height: 10em;
-    padding: 1em;
+    padding: 3em;
 }
 
 .logobox {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
-    padding: 3em;
+    background-color: var(--secondary-color);
+    padding: var(--padding);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
@@ -49,29 +56,28 @@ body {
 
 .logobox h1 {
     color: var(--primary-color);
-    font-size: 3em;
+    font-size: var(--padding);
 }
 
 .loginpage {
     display: flex;
     flex-direction: column;
-    padding: 3em;
-    background-color: white;
+    padding: var(--padding);
+    background-color: var(--color);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .loginpage label {
     font-size: 1.2em;
-    color: #387bda;
+    color: var(--primary-color);
 }
 
 .loginpage h1 {
     text-align: center;
     font-weight: 400;
     font-size: 2.5em;
-    color: #387bda;
-    margin-bottom: 1em;
-
+    color: var(--primary-color);
+    margin-bottom: var(--gap);
 }
 
 input {
@@ -79,23 +85,23 @@ input {
     box-sizing: border-box;
     width: 100%;
     padding: 1.5em;
-    margin-top: 1em;
+    margin-top: var(--gap);
     margin-bottom: 2em;
     font-size: .8em;
     border: none;
-    border-bottom: 3px solid #387bda;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .btnEnter {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--color);
 }
 
 .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1em;
+    gap: var(--gap);
 }
 
 .row p {
@@ -127,12 +133,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    z-index: 999;
 }
 
 .fixed {
     position: sticky;
     top: 0;
+    background-color: var(--color);
 }
 
 .logo {
@@ -192,7 +199,7 @@ a {
 }
 
 .menu a {
-    color: white;
+    color: var(--color);
     display: block;
     padding: .5em;
     transition: background-color .3s linear;
@@ -203,7 +210,7 @@ a {
 }
 
 .menu a:hover {
-    background-color: color-mix(in srgb, black 10%, transparent);
+    background-color: color-mix(in srgb, var(--color-black) 10%, transparent);
 }
 
 .menu li:not(:last-child) {
@@ -215,7 +222,7 @@ a {
 }
 
 .nav-icon {
-    background-color: black;
+    background-color: var(--color-black);
     display: inline-block;
     position: relative;
     height: 3px;
@@ -233,13 +240,13 @@ a {
 }
 
 .nav-icon::after {
-    background-color: black;
+    background-color: var(--color-black);
     transform: translateY(8px);
 
 }
 
 .nav-icon::before {
-    background-color: black;
+    background-color: var(--color-black);
     transform: translateY(-8px);
 }
 
@@ -256,7 +263,7 @@ a {
 }
 
 .menu-btn:focus-visible+.menu-icon {
-    outline: 2px solid black;
+    outline: 2px solid var(--color-black);
     outline-offset: 2px;
 }
 
@@ -272,7 +279,7 @@ a {
 
 .btnFuction {
     display: flex;
-    gap: 1em;
+    gap: var(--gap);
 }
 
 .btnFuction p {
@@ -303,17 +310,17 @@ a {
 
 .btnDivul {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--color);
 }
 
 .btnAdota {
-    color: #387bda;
+    color: var(--primary-color);
 }
 
 .history {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: var(--gap);
     container: historyContainer / inline-size;
 }
 
@@ -330,14 +337,8 @@ a {
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     background-color: color-mix(in srgb, var(--primary-color) 15%, transparent);
-    padding: 1em;
+    padding: var(--gap);
     box-sizing: border-box;
-}
-
-.headerHistory img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center top;
 }
 
 .headerHistory h3 {
@@ -347,7 +348,7 @@ a {
 .historyContent {
     flex: 1;
     text-align: left;
-    padding: 1em;
+    padding: var(--gap);
 }
 
 .coment {
@@ -356,8 +357,8 @@ a {
 }
 
 .img-wrapper {
-    width: 12em;
-    height: 12em;
+    width: var(--width-img);
+    height: var(--width-img);
     overflow: hidden;
     border-radius: 100%;
     background-color: #eaf1ff;
@@ -396,13 +397,13 @@ a {
 
 .pets {
     border-radius: var(--border-radius);
-    background-color: white;
+    background-color: var(--color);
     box-shadow: 1px 6px 10px 1px rgb(146, 146, 146);
 }
 
-.pets img {
+img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: bottom;
 
 }
@@ -414,7 +415,7 @@ a {
 
 .pets h3 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--color);
     padding: .5em;
     font-weight: 300;
     text-align: center;
@@ -437,13 +438,13 @@ a {
 }
 
 .btnverMais {
-    margin-top: 1em;
+    margin-top: var(--gap);
 }
 
 .cardsTips {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1em;
+    gap: var(--gap);
 
 }
 
@@ -452,10 +453,10 @@ a {
 }
 
 .tips {
-    color: white;
+    color: var(--color);
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
-    padding: 1em;
+    padding: var(--gap);
     text-align: center;
 }
 
@@ -470,7 +471,7 @@ a {
 }
 
 .square {
-    background-color: white;
+    background-color: var(--color);
     border-radius: 60%;
     margin: .3em;
 }
@@ -484,7 +485,7 @@ a {
 .faqsection {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: var(--gap);
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius);
     background-color: color-mix(in srgb, var(--primary-color) 15%, transparent);
@@ -501,7 +502,7 @@ a {
 
 .faq details {
     font-style: oblique;
-    margin: 1em 0;
+    margin: var(--gap) 0;
 }
 
 .faq h2 {
@@ -527,9 +528,9 @@ a {
     align-items: center;
     gap: 1.5em;
     background-color: rgb(212, 212, 212);
-    border: 2px solid black;
+    border: 2px solid var(--color-black);
     border-radius: var(--border-radius);
-    padding: 1em;
+    padding: var(--gap);
 }
 
 .alert i {
@@ -551,30 +552,32 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 0;
+    gap: var(--gap);
 }
 
 .nav-footer a {
-    color: black;
-    padding: .3em;
-}
-
-.nav-footer a:hover {
-    text-decoration: underline;
+    color: var(--color-black);
+    display: block;
+    padding-bottom: .3em;
 }
 
 .nav-footer li {
-    margin: .5em;
+    border: 1px solid transparent;
+}
+
+.nav-footer li:hover {
+    border-bottom: 1px solid var(--color-black);
 }
 
 .copy {
     margin-top: 3em;
     padding: .5em;
-    background-color: gainsboro;
+    background-color: var(--background-copy);
     text-align: center;
 }
 
 .copy p {
-    color: gray;
+    color: var(--color-footer);
     margin: 0;
     font-size: .8em;
 }
@@ -607,7 +610,7 @@ footer {
 
     .menu li:nth-child(3)>a {
         background-color: var(--primary-color);
-        color: white;
+        color: var(--color);
     }
 
     .menu li:nth-child(3)>a:hover {
